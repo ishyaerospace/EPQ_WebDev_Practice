@@ -25,14 +25,14 @@ x = 10, y = 5
 ---------------------------
 
 # comparison operators
-== equal to
-=== equal to and equal type
-!= not equal to
-!== not equal value or not equal type
-\> greater than
-< less than
->= greater than or equal to
-<= less than or equal to
+`== equal to`
+`=== equal to and equal type`
+`!= not equal to`
+`!== not equal value or not equal type`
+`> greater than`
+`< less than`
+`>= greater than or equal to`
+`<= less than or equal to`
 
 strings can be compared alphabetically.
 
