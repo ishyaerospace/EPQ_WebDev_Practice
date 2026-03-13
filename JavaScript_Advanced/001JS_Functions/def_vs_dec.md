@@ -18,7 +18,7 @@ const myFunction = function (x,y){
     return x * y;
 }
 
-## arror function
+## arrow function
 const myFunction = (x,y) => x * y;
 
 ## function constructor
