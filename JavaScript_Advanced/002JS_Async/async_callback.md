@@ -33,3 +33,30 @@ this code allows the calculation to be finished before running the display funct
 
 `myCalculator(5, 5, myDisplayer);`
 
+## error handling
+
+async code can fail, therefore error handling is needed. callbacks often use an error-first pattern:
+
+`function getData(callback) {`
+`  let ok = true;`
+
+`  if (ok) {`
+`    callback(null, "Data");`
+`  } else {`
+`    callback("Something failed", null);`
+`  }`
+`}`
+
+`getData(function(error, data) {`
+`  if (error) {`
+`    myDisplayer(error);`
+`    return;`
+`  }`
+`  myDisplayer(data);`
+`});`
+
+getData is called with a callback. callback has 2 arguaments. first is error second is result.
+
+when callbacks get deep, debugging gets complicated. Due to this modern asynchronous JS does not use call backs
+
+The alternative is to use promise and async/await
